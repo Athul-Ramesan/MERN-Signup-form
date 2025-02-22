@@ -6,6 +6,7 @@ import { routes } from "./routes"
 config()
 const app: Application = express()
 
+
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 const clientUrl = process.env.CLIENT_URL
