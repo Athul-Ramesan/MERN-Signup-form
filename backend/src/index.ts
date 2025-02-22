@@ -2,6 +2,7 @@ import express, {Application, NextFunction, Request, Response} from "express"
 import {config} from "dotenv"
 import cors from "cors"
 import { routes } from "./routes"
+import { dbConnect } from "./config/db"
 
 config()
 const app: Application = express()
@@ -18,7 +19,7 @@ app.use(cors({
 
 app.use("/", routes())
 
-
+dbConnect()
 const PORT = process.env.PORT
 app.listen(PORT , ()=>{
     console.log("app is listening on port 3000")
