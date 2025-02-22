@@ -1,11 +1,11 @@
 import { Router } from "express"
-import { signupController } from "../../controllers"
+import { signupUser } from "../../controllers"
 
 export const routes = ()=>{
     const router = Router()
 
     router.route("/signup")
-        .post(signupController)
+        .post(signupUser)
 
     return router
 }
