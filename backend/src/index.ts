@@ -1,8 +1,8 @@
 import express, {Application, NextFunction, Request, Response} from "express"
 import {config} from "dotenv"
 import cors from "cors"
-import { routes } from "./routes"
 import { dbConnect } from "./config/db"
+import { routes } from "./routes/auth"
 
 config()
 const app: Application = express()
