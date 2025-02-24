@@ -5,7 +5,7 @@ import { nextStep, prevStep, setErrors, updateFormData } from "../store/slice/fo
 
 export const PersonalInformation: React.FC = () => {
     const dispatch = useDispatch();
-    const { data, errors } = useSelector((state: RootState) => state.form);
+    const { data } = useSelector((state: RootState) => state.form);
   
     const validateStep = () => {
       const stepErrors: Partial<Record<keyof FormData, string>> = {};

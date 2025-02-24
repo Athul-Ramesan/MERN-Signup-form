@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 export const FinancialInformation : React.FC = () => {
     const dispatch = useDispatch<AppDispatch>();
     const navigate = useNavigate();
-    const { data, errors,loading } = useSelector((state: RootState) => state.form);
+    const { data } = useSelector((state: RootState) => state.form);
 
     const validateStep = () => {
         const stepErrors: Partial<Record<keyof FormData, string>> = {};
@@ -25,6 +25,7 @@ export const FinancialInformation : React.FC = () => {
         if (validateStep()) {
             try {
                 const result = await dispatch(submitRegistration(data)).unwrap();
+                console.log("🚀 ~ handleSubmit ~ result:", result)
                 navigate('/success');
             } catch (error) {
                 console.log("🚀 ~ handleSubmit ~ error:", error)
