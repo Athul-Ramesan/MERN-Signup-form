@@ -38,10 +38,10 @@ export const SuccessPage: React.FC = () => {
                 Copy
               </button>
             </div>
-          </div>
+          </div> */}
 
           <div className="space-x-4">
-            <a
+            {/* <a
               href={viewLink}
               target="_blank"
               rel="noopener noreferrer"
