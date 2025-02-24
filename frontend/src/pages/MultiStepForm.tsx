@@ -12,7 +12,7 @@ const MultiStepForm = () => {
   const { currentStep } = useSelector((state: RootState) => state.form);
 
   return (
-<div className="min-h-screen bg-gray-50">
+<div className="min-h-screen bg-gray-50 mt-6">
         <FormHeader logo={logo} />
         <div className="container mx-auto py-8">
           <StepIndicator currentStep={currentStep} totalSteps={3} />
