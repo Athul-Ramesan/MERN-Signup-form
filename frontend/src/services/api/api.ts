@@ -11,5 +11,6 @@ export const api = axios.create({
 
 
 export const generateViewLink = (userId: string) => {
+    console.log(`${window.location.origin}/view/${userId}`, "link inside generate link")
     return `${window.location.origin}/view/${userId}`;
   };

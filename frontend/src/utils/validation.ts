@@ -3,9 +3,9 @@ export const validateEmail = (email: string): boolean => {
     return emailRegex.test(email);
   };
   
-  export const validatePhone = (phone: string): boolean => {
+  export const validatePhone = (mobileNumber: string): boolean => {
     const phoneRegex = /^\+?[\d\s-]{10,}$/;
-    return phoneRegex.test(phone);
+    return phoneRegex.test(mobileNumber);
   };
   
   export const validatePassword = (password: string): boolean => {

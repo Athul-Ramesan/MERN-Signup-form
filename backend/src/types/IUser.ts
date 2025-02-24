@@ -1,11 +1,18 @@
 export interface IUser {
-    name: string;
+    title: string
+    fullName: string;
     email: string;
-    phone: string;
-    dob ?: string;
+    mobileNumber: string | number;
+    dateOfBirth ?: string;
     password: string;
-    address ?: string;
+    currentAddress ?: string;
     description ?: string;
     employmentStatus ?: string;
     financialInfo ?: string;
+    additionalSavings ? :string;
+    aboutYourself ?:string;
+    addressDuration?:string;
+
+
 }
+

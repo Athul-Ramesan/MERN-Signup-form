@@ -22,5 +22,5 @@ app.use("/", routes())
 dbConnect()
 const PORT = process.env.PORT
 app.listen(PORT , ()=>{
-    console.log("app is listening on port 3000")
+    console.log("app is listening on port ", PORT)
 })
