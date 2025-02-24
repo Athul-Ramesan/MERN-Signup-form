@@ -22,7 +22,7 @@ export const SuccessPage: React.FC = () => {
             Your information has been saved successfully.
           </p>
           
-          <div className="bg-gray-50 p-4 rounded-lg mb-6">
+          {/* <div className="bg-gray-50 p-4 rounded-lg mb-6">
             <p className="text-sm text-gray-600 mb-2">View your saved information at:</p>
             <div className="flex items-center gap-2">
               <input
@@ -48,7 +48,7 @@ export const SuccessPage: React.FC = () => {
               className="text-blue-500 hover:text-blue-700"
             >
               View Saved Data
-            </a>
+            </a> */}
             <button
               onClick={() => window.location.href = '/'}
               className="text-gray-500 hover:text-gray-700"
