@@ -1,5 +1,5 @@
 export const FormHeader: React.FC<{ logo: string }> = ({ logo }) => (
-    <div className="flex justify-between items-center p-6">
+    <div className="fixed top-0 left-0 w-full bg-white shadow-md flex justify-between items-center p-6 z-50">
         <img src={logo} alt="Craxinno Technologies" className="h-8" />
         <button className="rounded-full p-2 hover:bg-gray-100">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -8,4 +8,3 @@ export const FormHeader: React.FC<{ logo: string }> = ({ logo }) => (
         </button>
     </div>
 );
-
