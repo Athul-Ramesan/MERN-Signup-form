@@ -1,16 +1,15 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../store';
-import { generateViewLink } from '../services/api/api';
 import { useEffect, useState } from 'react';
 
 export const SuccessPage: React.FC = () => {
   const { userId } = useSelector((state: RootState) => state.form);
   const [viewLink, setViewLink] = useState('')
   useEffect(()=>{
-      const viewLink = userId ? generateViewLink(userId) : '';
-      console.log("🚀 ~ useEffect ~ viewLink:", viewLink)
+      const viewLink = userId ? `${window.location.origin}/view/${userId}` : ""
       setViewLink(viewLink)
   },[])
+      console.log("🚀 ~ useEffect ~ viewLink:", viewLink)
   console.log("🚀 ~ viewLink:", viewLink)
 
   return (

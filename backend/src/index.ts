@@ -11,6 +11,7 @@ const app: Application = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 const clientUrl = process.env.CLIENT_URL
+console.log("🚀 ~ clientUrl:", clientUrl)
 app.use(cors({
     origin: clientUrl,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
